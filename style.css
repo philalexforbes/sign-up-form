@@ -1,0 +1,88 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(./fonts/Norse-Bold.otf);
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    height: 100vh;
+}
+
+.mainContent{
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 30vw;
+    background-image: url("./imgs/photo-1585202900225-6d3ac20a6962.avif");
+}
+
+.credit{
+    text-align: center;
+    color: white;
+}
+.credit a{
+    color: white;
+}
+
+.odin{
+    display: flex;
+    height: 10%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(0 0 0 / 50%);
+}
+
+.odinImage{
+    height: 7em;
+}
+
+.odinText{
+    font-family: Norse-Bold;
+    font-size: 7em;
+    color: white;
+}
+
+.credit{
+    
+    padding: 10px;
+}
+
+.main{
+    width: 70vw;
+}
+
+.top-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.testimony{
+    word-wrap: normal;
+}
+
+.middle-section{
+    display: flex;
+    flex-flow: rowwrap;
+}
+
+legend{
+    font-weight: bold;
+}
+
+input {
+    border-color: #E5E7EB;
+}
+
+button {
+    background-color: #596D48;
+    border: 0;
+    border-radius: 5px;
+}
