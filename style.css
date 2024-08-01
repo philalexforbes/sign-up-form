@@ -9,7 +9,7 @@ body{
     
 }
 
-div{
+.main ~ div{
     border: red 1px solid;
 }
 
@@ -70,19 +70,26 @@ div{
 }
 
 .top-section{
-    border: 1px red solid;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    background-color:rgba(206, 200, 200, 0.25);
 }
 
 .testimony{
+    display: flex;
+    flex-direction: column;
     word-wrap: normal;
 }
 
-.middle-section{
+.form-section{
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.form-section > div{
+    border: red 1px solid;
 }
 
 .form-legend, .testimony1, .testimony2, .sarcasm {
@@ -92,7 +99,7 @@ div{
 .name, .contact, .password{
     display:flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .first-name, .last-name, .email-section, .contact-section, .password-section, .confirm-password-section{
@@ -115,6 +122,7 @@ div{
     display: flex;
     flex-direction: column;
     padding: 10px;
+    background-color:rgba(206, 200, 200, 0.25);
 }
 
 legend{
@@ -124,7 +132,7 @@ legend{
 input {
     border-color: #E5E7EB;
     border-radius: 5px;
-    padding-right: 10px;
+    padding-right: 50px;
     padding-bottom: 10px;
 }
 
