@@ -70,7 +70,39 @@ body{
 
 .middle-section{
     display: flex;
-    flex-flow: rowwrap;
+    flex-flow: row wrap;
+}
+
+.form-legend, .testimony1, .testimony2, .sarcasm {
+    font-size: 24px;
+}
+
+.name, .contact, .password{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.first-name, .last-name, .email-section, .contact-section, .password-section, .confirm-password-section{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.contact-legend, .password-legend, .confirm-password-legend{
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-input, .contact-input, .password-input, .confirm-password-input{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
 }
 
 legend{
