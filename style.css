@@ -6,6 +6,8 @@
 body{
     margin: 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main ~ div{
@@ -71,14 +73,22 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    justify-items: center;
     background-color:rgba(206, 200, 200, 0.25);
     height: 25vh;
+    padding-left: 35px;
 }
 
 .testimony{
     display: flex;
     flex-direction: column;
+    font-weight:600;
     word-wrap: normal;
+    width: 50vw;
+}
+
+.sarcasm{
+    font-weight:600;
 }
 
 legend{
@@ -132,6 +142,7 @@ legend{
 
 label {
     font-size: 14px;
+    font-weight: 600;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -169,4 +180,11 @@ button {
 
 .action{
     margin-top: 15px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+a{
+    color: #596D48;
+    text-decoration: none;
 }
