@@ -6,7 +6,6 @@
 body{
     margin: 0;
     display: flex;
-    
 }
 
 .main ~ div{
@@ -16,7 +15,6 @@ body{
 .mainContent{
     display: flex;
     flex-direction: row;
-    align-items: stretch;
     min-height: 900px;
     min-width: 1200px;
 }
@@ -66,7 +64,7 @@ body{
 }
 
 .main{
-    width: 70vw;
+    height: min-content;
 }
 
 .top-section{
@@ -74,6 +72,7 @@ body{
     flex-direction: column;
     justify-content: space-evenly;
     background-color:rgba(206, 200, 200, 0.25);
+    height: 25vh;
 }
 
 .testimony{
@@ -82,24 +81,24 @@ body{
     word-wrap: normal;
 }
 
-.form-section{
-    display: flex;
-    flex-direction: column;
+legend{
     padding-top: 10px;
 }
 
-.form-section > div{
-    border: red 1px solid;
+.form-section{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    height: 18vh;
 }
 
 .form-legend, .testimony1, .testimony2, .sarcasm {
     font-size: 24px;
 }
 
-.name, .contact, .password{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
+.left-side, .right-side {
+    display: flex;
+    flex-direction: column;
 }
 
 .first-name, .last-name, .email-section, .contact-section, .password-section, .confirm-password-section{
@@ -115,25 +114,35 @@ body{
 
 .name-input, .contact-input, .password-input, .confirm-password-input{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .form-nav {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    justify-items: flex-start;
+    padding-left: 40px;
     background-color:rgba(206, 200, 200, 0.25);
+    height: 27vh;
 }
 
 legend{
     font-weight: bold;
 }
 
+label {
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 input {
     border-color: #E5E7EB;
     border-radius: 5px;
-    padding-right: 50px;
-    padding-bottom: 10px;
+    margin-top: 2px;
+    height: 2em;
+    width: 250px;
+    /* padding-right: 50px;
+    padding-bottom: 10px; */
 }
 
 input:focus{
@@ -153,6 +162,11 @@ button {
     padding-right: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin-top: 30px;
     color: white;
     font-weight: bolder;
+}
+
+.action{
+    margin-top: 15px;
 }
