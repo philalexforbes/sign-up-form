@@ -164,6 +164,10 @@ input:invalid {
     border: red 1px solid;
 }
 
+input:valid {
+    border: #E5E7EB 1px solid;
+}
+
 button {
     background-color: #596D48;
     border: 0;
